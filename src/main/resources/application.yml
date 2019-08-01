@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tangshi?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+  flyway:
+    locations: classpath:db
+    validate-on-migrate: false
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.boot: INFO
+
+crawler:
+  base: http://so.gushiwen.org
+  path: /gushi/tangshi.aspx
+  thread: 10
