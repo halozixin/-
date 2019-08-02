@@ -13,6 +13,7 @@ import com.zh.analyze.entity.PoetryInfo;
 import org.ansj.domain.Term;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,6 +26,7 @@ import java.util.stream.Collectors;
  * @author ZhangHao
  * @create: 2019-08-01 21:15
  **/
+@Service
 public class AnalyzeServiceImpl implements AnalyzeService{
   @Autowired
   private AnalyzeDao analyzeDao;

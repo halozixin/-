@@ -11,6 +11,7 @@ package com.zh.analyze.dao;/**
 import com.zh.analyze.entity.PoetryInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ import java.util.List;
  * @author ZhangHao
  * @create: 2019-08-01 21:10
  **/
+@Repository
 public class AnalyzeDaoImpl implements AnalyzeDao{
 
     @Autowired

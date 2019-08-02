@@ -13,11 +13,13 @@ import com.gargoylesoftware.htmlunit.html.HtmlDivision;
 import com.gargoylesoftware.htmlunit.html.HtmlElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.zh.crawler.common.Page;
+import org.springframework.stereotype.Component;
 
 /**
  * @author ZhangHao
  * @create: 2019-08-01 20:34
  **/
+@Component
 public class DataParse implements Parse{
 
     /**

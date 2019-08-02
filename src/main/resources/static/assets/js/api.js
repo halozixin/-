@@ -3,7 +3,7 @@ function creationRanking(id) {
         url: "/analyze/creation/ranking",
         dataType: "json",
         method: "get",
-        success: function (data, status, xhr) {
+        success: function (data) {//success: function (data, status, xhr) {
             var myChart = echarts.init(document.getElementById(id));
             var options = {
                 title: {

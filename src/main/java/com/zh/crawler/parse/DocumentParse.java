@@ -10,11 +10,13 @@ package com.zh.crawler.parse;/**
 
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.zh.crawler.common.Page;
+import org.springframework.stereotype.Component;
 
 /**
  * @author ZhangHao
  * @create: 2019-08-01 20:45
  **/
+@Component
 public class DocumentParse implements Parse{
     @Override
     public void parse(Page page) {
